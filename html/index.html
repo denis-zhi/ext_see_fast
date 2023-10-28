@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ваше расширение</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h1>Мои любимые видео</h1>
+  
+  <div id="videoList">
+    <!-- Здесь будет список добавленных видео -->
+  </div>
+
+  <form id="addVideoForm">
+    <input type="text" id="videoUrlInput" placeholder="Введите URL видео">
+    <input type="text" id="videoTitleInput" placeholder="Введите название видео (необязательно)">
+    <button type="button" id="parseButton">Парсить</button>
+    <button type="submit">Добавить</button>
+  </form>
+
+  <div id="passwordSection">
+    <input type="checkbox" id="passwordCheckbox">
+    <label for="passwordCheckbox">Включить доступ по паролю</label>
+    <div id="passwordInputContainer">
+      <input type="password" id="passwordInput" placeholder="Введите пароль">
+      <button type="button" id="savePasswordButton">Сохранить пароль</button>
+    </div>
+  </div>
+
+  <script src="../js/popup.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
